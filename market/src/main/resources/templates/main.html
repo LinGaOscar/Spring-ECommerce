@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Spring App</title>
+
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" href="../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" th:href="@{/css/font-awesome.min.css}" href="../static/css/font-awesome.min.css"/>
+    <script type="text/javascript" th:src="@{/js/jquery-3.6.0.min.js}"
+            src="../static/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.bundle.min.js}"
+            src="../static/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<!-- 共用的 header -->
+<header th:insert="${headerTemplate}"></header>
+
+<!-- 具體頁面的內容將插入到此處 -->
+<div class="content" th:insert="${contentTemplate}"></div>
+
+<!-- 共用的 footer -->
+<footer th:insert="${footerTemplate}"></footer>
+
+</body>
+</html>
