@@ -25,7 +25,6 @@ public class pageController {
     }
 
     private void buildPage(Model model, String pageName) {
-        buildNav(model, pageName);
         buildHeader(model, pageName);
         buildContents(model, pageName);
         buildFooter(model, pageName);
@@ -44,6 +43,19 @@ public class pageController {
         }
     }
 
+    private void buildFooter(Model model, String pageName) {
+        model.addAttribute("footerTemplate", "footers/footer");
+    }
+
+    private void buildContents(Model model, String pageName) {
+        model.addAttribute("contentTemplate", "contents/" + pageName);
+    }
+
+    private void buildHeader(Model model, String pageName) {
+        buildNav(model, pageName);
+        model.addAttribute("headerTemplate", "headers/header");
+    }
+
     private void buildNav(Model model, String pageName) {
         if (pageName.equals("")) {
 
@@ -54,17 +66,5 @@ public class pageController {
         navItems.add(new NavItem("商品清單", "/productList"));
         navItems.add(new NavItem("購物車", "/shoppingCart"));
         model.addAttribute("navItems", navItems);
-    }
-
-    private void buildFooter(Model model, String pageName) {
-        model.addAttribute("footerTemplate", "footers/footer");
-    }
-
-    private void buildContents(Model model, String pageName) {
-        model.addAttribute("contentTemplate", "contents/" + pageName);
-    }
-
-    private void buildHeader(Model model, String pageName) {
-        model.addAttribute("headerTemplate", "headers/header");
     }
 }
