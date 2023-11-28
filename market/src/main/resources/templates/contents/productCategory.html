@@ -1,23 +1,13 @@
 <div class="container mt-5" id="productCategory">
     <h1>Product Categories</h1>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-            <div class="card h-100">
+    <div class="row row-cols-1 row-cols-md-3 g-4" v-if="products" >
+        <div class="col" v-for="product in products">
+            <div class="card h-100" >
                 <div class="card-body">
-                    <img src="../../static/images/index/3c.png"></img>
-                    <h5 class="card-title">3C</h5>
-                    <p class="card-text">Electronics, Computers, Cameras, etc.</p>
-                    <a href="/products/3C" class="btn btn-primary">View Products</a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card h-100">
-                <div class="card-body">
-                    <img src="../../static/images/index/life.png"></img>
-                    <h5 class="card-title">生活品</h5>
-                    <p class="card-text">Home, Lifestyle, Kitchen, etc.</p>
-                    <a href="/products/lifestyle" class="btn btn-primary">View Products</a>
+                    <img :src="'/images/productCategory/'+product.title+'.png'">
+                    <h5 class="card-title">{{product.title}}</h5>
+                    <p class="card-text">{{product.description}}</p>
+                    <a :href="'/productList?productId='+product.id" class="btn btn-primary">View Products</a>
                 </div>
             </div>
         </div>
@@ -26,24 +16,26 @@
 
 <script>
     const productCategory = new Vue({
-        el: "productCategory",
+        el: "#productCategory",
         data() {
-            return {}
+            return {
+                products: null,
+            }
         },
         created() {
-
+            this.getProductCategory();
         },
         methods: {
             getProductCategory() {
-                $.post("")
+                $.get("/rest/productCategory")
                     .done(result => {
-
+                        this.products = result.resultData;
                     })
                     .fail(err => {
 
                     })
                     .always(() => {
-
+                        console.log("always");
                     });
             }
         }

@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fa643b5-0252-4568-9b25-99fd9f7f937c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/productCategoryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/pageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/dispatch/pageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/productListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/productListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/shoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/shoppingCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market/src/main/resources/templates/contents/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/market/src/main/resources/templates/contents/productCategory.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market/src/main/resources/templates/contents/productList.html" beforeDir="false" afterPath="$PROJECT_DIR$/market/src/main/resources/templates/contents/productList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market/src/main/resources/templates/contents/shoppingCart.html" beforeDir="false" afterPath="$PROJECT_DIR$/market/src/main/resources/templates/contents/shoppingCart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/productCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/productCategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market/src/main/resources/static/images/index/3c.png" beforeDir="false" afterPath="$PROJECT_DIR$/market/src/main/resources/static/images/productCategory/3c.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market/src/main/resources/static/images/index/life.png" beforeDir="false" afterPath="$PROJECT_DIR$/market/src/main/resources/static/images/productCategory/life.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market/src/main/resources/templates/contents/productCategory.html" beforeDir="false" afterPath="$PROJECT_DIR$/market/src/main/resources/templates/contents/productCategory.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +82,7 @@
       <workItem from="1701004582732" duration="6908000" />
       <workItem from="1701056335623" duration="6787000" />
       <workItem from="1701156760173" duration="2537000" />
+      <workItem from="1701165162185" duration="3046000" />
     </task>
     <servers />
   </component>
