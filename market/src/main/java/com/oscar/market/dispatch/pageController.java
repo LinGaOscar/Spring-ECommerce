@@ -1,14 +1,12 @@
-package com.oscar.market.controller;
+package com.oscar.market.dispatch;
 
 import com.oscar.market.model.NavItem;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 @Controller
@@ -31,9 +29,9 @@ public class pageController {
     }
 
     private String pageFilter(String page) {
-        // 判斷跟目錄
+        // 判斷跟目錄返回預設
         if (page == null || page.isEmpty()) {
-            return "index";
+            return "productCategory";
         }
         // 判斷現有頁面
         if (page.equals("productList") || page.equals("shoppingCart")) {
