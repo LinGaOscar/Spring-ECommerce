@@ -5,11 +5,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fa643b5-0252-4568-9b25-99fd9f7f937c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/database/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/DatabaseApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/ProductCategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/ProductCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/ProductCategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/model/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductCategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductCategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/resources/config/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/test/java/com/oscar/database/DatabaseApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/java/com/oscar/manage/ManageApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/resources/config/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/resources/static/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/resources/static/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/resources/static/images/productCategory/3c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/resources/static/images/productCategory/life.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/resources/static/images/ui-icons_444444_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/resources/static/images/ui-icons_555555_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/resources/static/images/ui-icons_777620_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/resources/static/images/ui-icons_777777_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/resources/static/images/ui-icons_cc0000_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/resources/static/images/ui-icons_ffffff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/resources/static/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/resources/static/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/resources/static/js/jquery-3.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/resources/static/js/vue-2.6.14.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/test/java/com/oscar/manage/ManageApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/ShoppingCartController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/productCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/productCategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market/src/main/resources/static/images/index/3c.png" beforeDir="false" afterPath="$PROJECT_DIR$/market/src/main/resources/static/images/productCategory/3c.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market/src/main/resources/static/images/index/life.png" beforeDir="false" afterPath="$PROJECT_DIR$/market/src/main/resources/static/images/productCategory/life.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/productCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/ProductCategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/productListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/ProductListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/shoppingCartController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/dispatch/pageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/dispatch/PageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market/src/main/resources/templates/contents/productCategory.html" beforeDir="false" afterPath="$PROJECT_DIR$/market/src/main/resources/templates/contents/productCategory.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,12 +67,23 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/market/src/main/java/com/oscar/market/dispatch/PageController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/market/src/main/resources/templates/main.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/market/src/main/resources/templates/contents/productCategory.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/ShoppingCartController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/ProductListController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/ProductCategoryController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/market/src/main/resources/templates/contents/shoppingCart.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/market/src/main/resources/templates/contents/productList.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2YiLxoDnAYD8lLHHRN5lcihI4CF" />
   <component name="ProjectLevelVcsManager">
@@ -37,6 +95,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -46,11 +105,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Spring-Learning" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SpringAIO" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\Spring-ECommerce\database\src\main\resources" />
+      <recent name="D:\GitHub\Spring-ECommerce\manage\src\main\resources" />
       <recent name="D:\GitHub\Spring-ECommerce\market\src\main\resources\templates\contents" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -61,7 +127,28 @@
       <recent name="com.oscar.market" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.DatabaseApplication">
+    <configuration name="DatabaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="database" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.oscar.database.DatabaseApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="manage" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.oscar.manage.ManageApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MarketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="market" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.oscar.market.MarketApplication" />
@@ -83,6 +170,7 @@
       <workItem from="1701056335623" duration="6787000" />
       <workItem from="1701156760173" duration="2537000" />
       <workItem from="1701165162185" duration="3046000" />
+      <workItem from="1701238400940" duration="10337000" />
     </task>
     <servers />
   </component>

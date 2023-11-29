@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-public class pageController {
+public class PageController {
     @GetMapping({"", "/", "/{page}"})
     public String home(Model model, @PathVariable(required = false) String page) {
         String pageName = pageFilter(page);

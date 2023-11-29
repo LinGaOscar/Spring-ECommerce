@@ -8,14 +8,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="market" />
+        <module name="database" />
+        <module name="manage" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="database" target="11" />
+      <module name="manage" target="11" />
       <module name="market" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="database" options="-parameters" />
+      <module name="manage" options="-parameters" />
       <module name="market" options="-parameters" />
     </option>
   </component>

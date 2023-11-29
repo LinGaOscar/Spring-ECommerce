@@ -11,7 +11,7 @@ import java.util.Map;
 
 @RequestMapping("/rest/productCategory")
 @RestController
-public class productCategoryController {
+public class ProductCategoryController {
 
     @GetMapping()
     public Map<String, Object> getProductCategory() {
@@ -21,13 +21,13 @@ public class productCategoryController {
         Map<String, Object> item1 = new HashMap<>();
         item1.put("title", "3C");
         item1.put("description", "Electronics, Computers, Cameras, etc.");
-        item1.put("id","00001");
+        item1.put("pid","00001");
         categories.add(item1);
 
         Map<String, Object> item2 = new HashMap<>();
         item2.put("title", "Life");
         item2.put("description", "Home, Lifestyle, Kitchen, etc.");
-        item2.put("id","00002");
+        item2.put("pid","00002");
         categories.add(item2);
 
         result.put("resultData", categories);

@@ -1,0 +1,14 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /restfulapi
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mariadb://localhost:3306/springec
+    username: root
+    password: "0731"
+    driver-class-name: org.mariadb.jdbc.Driver
