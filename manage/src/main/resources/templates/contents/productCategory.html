@@ -1,0 +1,31 @@
+<div class="container mt-5" id="productCategory">
+    This is productCategory page
+</div>
+
+<script>
+    const productCategory = new Vue({
+        el: "#productCategory",
+        data() {
+            return {
+                products: null,
+            }
+        },
+        created() {
+            this.getProductCategory();
+        },
+        methods: {
+            getProductCategory() {
+                $.get("/rest/productCategory")
+                    .done(result => {
+                        this.products = result.resultData;
+                    })
+                    .fail(err => {
+
+                    })
+                    .always(() => {
+                        console.log("always");
+                    });
+            }
+        }
+    });
+</script>
