@@ -1,6 +1,8 @@
 package com.oscar.market.dispatch;
 
-import com.oscar.market.model.NavItem;
+import com.oscar.market.model.NavItems;
+import com.oscar.market.service.PageService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,6 +13,12 @@ import java.util.List;
 
 @Controller
 public class PageController {
+    PageService pageService;
+    @Autowired
+    public PageController(PageService pageService) {
+        this.pageService = pageService;
+    }
+
     @GetMapping({"", "/", "/{page}"})
     public String home(Model model, @PathVariable(required = false) String page) {
         String pageName = pageFilter(page);
@@ -59,10 +67,10 @@ public class PageController {
 
         }
         // 動態生成連結的清單
-        List<NavItem> navItems = new ArrayList<>();
-        navItems.add(new NavItem("首頁", "/"));
-        navItems.add(new NavItem("商品清單", "/productList"));
-        navItems.add(new NavItem("購物車", "/shoppingCart"));
+        List<NavItems> navItems = new ArrayList<>();
+        navItems.add(new NavItems(0,"首頁", "/"));
+        navItems.add(new NavItems(1,"商品清單", "/productList"));
+        navItems.add(new NavItems(2,"購物車", "/shoppingCart"));
         model.addAttribute("navItems", navItems);
     }
 }

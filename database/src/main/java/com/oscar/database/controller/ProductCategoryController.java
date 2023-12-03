@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Map;
 
 @RequestMapping("/productCategory")
 @RestController
@@ -42,7 +43,7 @@ public class ProductCategoryController {
     @PostMapping
     public ResponseEntity<ApiResponse> saveOne(@Valid @RequestBody ProductCategoryDTO productCategoryDTO, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
-            response = new ApiResponse("422", "參數錯誤", productCategoryDTO);
+            response = new ApiResponse("422", "參數錯誤", (Map<String, Object>) productCategoryDTO);
         }
         try {
             ProductCategory productCategory = productCategoryService.saveOne(productCategoryDTO.convertToProductCategory());

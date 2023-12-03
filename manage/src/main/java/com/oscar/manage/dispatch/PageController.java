@@ -1,6 +1,6 @@
 package com.oscar.manage.dispatch;
 
-import com.oscar.manage.model.NavItem;
+import com.oscar.manage.model.NavItems;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -59,10 +59,10 @@ public class PageController {
 
         }
         // 動態生成連結的清單
-        List<NavItem> navItems = new ArrayList<>();
-        navItems.add(new NavItem("商品類別", "/"));
-        navItems.add(new NavItem("商品清單", "/productList"));
-        navItems.add(new NavItem("購物車", "/shoppingCart"));
+        List<NavItems> navItems = new ArrayList<>();
+        navItems.add(new NavItems(0,"首頁", "/"));
+        navItems.add(new NavItems(1,"商品清單", "/productList"));
+        navItems.add(new NavItems(2,"購物車", "/shoppingCart"));
         model.addAttribute("navItems", navItems);
     }
 }
