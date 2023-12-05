@@ -10,6 +10,6 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 public class PageList implements Serializable {
-    private String pageName;
     private String pageTitle;
+    private String pageName;
 }

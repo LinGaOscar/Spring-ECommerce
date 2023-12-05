@@ -25,7 +25,7 @@ public class ProductCategory implements Serializable {
     @Column(name = "pid", unique = true)
     private String pid;
 
-    @Column(name = "id_delete", unique = true)
+    @Column(name = "id_delete")
     private Boolean isDelete;
 
     @Override

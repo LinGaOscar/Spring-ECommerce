@@ -1,5 +1,7 @@
 package com.oscar.market.controller;
 
+import com.oscar.market.service.MainPageService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,7 +14,6 @@ import java.util.Map;
 @RequestMapping("/rest/productCategory")
 @RestController
 public class ProductCategoryController {
-
     @GetMapping()
     public Map<String, Object> getProductCategory() {
         Map<String, Object> result = new HashMap<>();

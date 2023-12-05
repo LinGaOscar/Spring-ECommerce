@@ -2,6 +2,7 @@ package com.oscar.market.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /***
  *{"statusCode":"200","status":"正常","resultData":data}
@@ -10,6 +11,7 @@ import lombok.Data;
  */
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class ApiResponse {
     private String statusCode;
     private String status;
