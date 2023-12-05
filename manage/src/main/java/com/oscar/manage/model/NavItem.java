@@ -9,8 +9,10 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class NavItemList implements Serializable {
+public class NavItem implements Serializable {
     private Number sequence;
     private String name;
     private String url;
+
+
 }

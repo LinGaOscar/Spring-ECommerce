@@ -1,0 +1,70 @@
+<div class="container" id="navbar">
+    <h1>Navbar List</h1>
+    <a class="btn-primary" href="/navbarForm">ADD</a>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Sequence</th>
+            <th>URL</th>
+            <th>Delete</th>
+            <th>option</th>
+            <!-- 如果需要显示更多字段，请添加更多的表头 -->
+        </tr>
+        </thead>
+        <tbody>
+        <!-- 在这里循环输出 Navbar 数据 -->
+        <tr v-for="navbar in navbarList">
+            <td>
+                <p>{{navbar.id}}</p>
+            </td>
+            <td>
+                <p>{{navbar.title}}</p>
+            </td>
+            <td>
+                <p>{{navbar.sequence}}</p>
+            </td>
+            <td>
+                <p>{{navbar.url}}</p>
+            </td>
+            <td>
+                <p>{{navbar.isDelete}}</p>
+            </td>
+            <td>
+                <a class="btn-primary">編輯</a>
+            </td>
+            <!-- 如果需要显示更多字段，请添加对应的表格数据 -->
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    const navbar = new Vue({
+        el: "#navbar",
+        data() {
+            return {
+                navbarList: '',
+                addForm: false,
+            }
+        },
+        created() {
+            this.getNavbarList();
+        },
+        methods: {
+            getNavbarList() {
+                $.get('/rest/navbar')
+                    .done(result => {
+                        this.navbarList = result.resultData;
+                    })
+                    .fail(err => {
+
+                    })
+                    .always(() => {
+                        console.log("always");
+                    });
+            }
+        }
+    });
+</script>

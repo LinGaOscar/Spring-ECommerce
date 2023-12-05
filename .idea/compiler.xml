@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="market" />
         <module name="database" />
+        <module name="manage" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

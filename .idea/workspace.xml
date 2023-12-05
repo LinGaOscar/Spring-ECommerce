@@ -5,11 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fa643b5-0252-4568-9b25-99fd9f7f937c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/manage/src/main/java/com/oscar/manage/controller/NavbarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/java/com/oscar/manage/domain/Navbar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/java/com/oscar/manage/domain/NavbarRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/java/com/oscar/manage/domainConvert/NavbarConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/java/com/oscar/manage/service/NavBarServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/java/com/oscar/manage/service/NavbarService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/resources/templates/contents/navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/src/main/resources/templates/contents/navbarForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/dispatch/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/dispatch/PageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/service/PageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/service/MainPageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/service/PageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/market/src/main/java/com/oscar/market/service/MainPageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/market/src/main/resources/config/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/resources/config/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/manage/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/src/main/java/com/oscar/manage/controller/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/manage/src/main/java/com/oscar/manage/outbound/MainPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/src/main/java/com/oscar/manage/dispatch/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/manage/src/main/java/com/oscar/manage/dispatch/PageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/src/main/java/com/oscar/manage/model/NavItemList.java" beforeDir="false" afterPath="$PROJECT_DIR$/manage/src/main/java/com/oscar/manage/model/NavItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/src/main/java/com/oscar/manage/service/MainPageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/manage/src/main/java/com/oscar/manage/service/MainPageServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/manage/src/main/resources/config/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,13 +42,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/ProductCategoryController.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/market/src/main/java/com/oscar/market/dispatch/PageController.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/market/src/main/resources/templates/main.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/market/src/main/resources/templates/contents/shoppingCart.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/market/src/main/resources/templates/contents/productCategory.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/ShoppingCartController.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/ProductListController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/ProductCategoryController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/market/src/main/resources/templates/contents/shoppingCart.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/market/src/main/resources/templates/contents/productList.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JpbToolWindowState">
@@ -75,7 +89,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/manage/src/main/java/com/oscar/manage" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/market" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manage/pom.xml" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />

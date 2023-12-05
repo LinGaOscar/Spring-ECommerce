@@ -1,4 +1,4 @@
-package com.oscar.manage.controller;
+package com.oscar.manage.outbound;
 
 import com.oscar.manage.model.ApiResponse;
 import com.oscar.manage.service.MainPageService;
@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
 import java.util.Map;
 
 @RequestMapping("/restfulApi/mainPage")
