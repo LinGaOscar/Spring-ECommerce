@@ -15,13 +15,9 @@ import java.util.List;
 @RestController
 @RequestMapping("/product")
 public class ProductController {
-    private final ProductService productService;
-    ApiResponse response;
-
     @Autowired
-    public ProductController(ProductService productService) {
-        this.productService = productService;
-    }
+    private ProductService productService;
+    ApiResponse response;
 
     @GetMapping
     public ResponseEntity<ApiResponse> getAllList() {

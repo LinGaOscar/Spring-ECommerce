@@ -15,13 +15,9 @@ import java.util.List;
 @RestController
 @RequestMapping("/webPage")
 public class WebPageController {
-    private final WebPageService webPageService;
-    ApiResponse response;
-
     @Autowired
-    public WebPageController(WebPageService webPageService) {
-        this.webPageService = webPageService;
-    }
+    private WebPageService webPageService;
+    ApiResponse response;
 
     @GetMapping
     public ResponseEntity<ApiResponse> getAllList() {

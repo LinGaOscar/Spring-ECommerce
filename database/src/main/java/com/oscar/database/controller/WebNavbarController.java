@@ -15,13 +15,9 @@ import java.util.List;
 @RestController
 @RequestMapping("/webNavbar")
 public class WebNavbarController {
-    private final WebNavbarService webNavbarService;
-    ApiResponse response;
-
     @Autowired
-    public WebNavbarController(WebNavbarService webNavbarService) {
-        this.webNavbarService = webNavbarService;
-    }
+    private WebNavbarService webNavbarService;
+    ApiResponse response;
 
     @GetMapping
     public ResponseEntity<ApiResponse> getAllList() {
