@@ -22,8 +22,8 @@ public class WebPage  implements Serializable {
     @Column(name = "page_name")
     private String pageName;
 
-    @Column(name = "introduce")
-    private String introduce;
+    @Column(name = "description")
+    private String description;
 
     @Column(name = "pid", unique = true)
     private String pid;

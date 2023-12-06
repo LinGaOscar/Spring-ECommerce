@@ -5,33 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d447987b-cd4d-4fd4-b9db-2af1cdd297d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/WebNavbar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/WebNavbarRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/WebPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/WebPageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/dto/WebNavbarDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/dto/WebPageDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/WebNavBarServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/WebNavbarService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/WebPageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/WebPageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage/src/main/resources/templates/contents/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/WebNavbarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/WebPageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/dto/ProductDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/ProductCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/ProductCategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/ProductCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/ProductCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/ProductCategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/ProductCategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/dto/ProductCategoryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/dto/ProductCategoryDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/model/ApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/model/ApiResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/WebPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/WebPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/dto/WebPageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/dto/WebPageDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductCategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductCategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/src/main/java/com/oscar/manage/dispatch/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/manage/src/main/java/com/oscar/manage/dispatch/PageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/src/main/resources/templates/contents/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/manage/src/main/resources/templates/contents/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/src/main/resources/templates/contents/productCategory.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/src/main/resources/templates/contents/productList.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/src/main/resources/templates/contents/shoppingCart.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/src/main/resources/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/manage/src/main/resources/templates/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,11 +108,11 @@
       <recent name="com.oscar.market" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.oscar.database.dto" />
+      <recent name="com.oscar.database.controller" />
       <recent name="com.oscar.database.server" />
+      <recent name="com.oscar.database.dto" />
       <recent name="com.oscar.database.domain" />
       <recent name="com.oscar.manage.dispatch" />
-      <recent name="com.oscar.database.model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -167,10 +153,10 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="HTTP Request.generated-requests#1" />
       <item itemvalue="Spring Boot.DatabaseApplication" />
       <item itemvalue="Spring Boot.ManageApplication" />
       <item itemvalue="Spring Boot.MarketApplication" />
-      <item itemvalue="HTTP Request.generated-requests#1" />
     </list>
     <recent_temporary>
       <list>
@@ -196,6 +182,7 @@
       <workItem from="1701270506660" duration="5067000" />
       <workItem from="1701623141809" duration="3791000" />
       <workItem from="1701861286358" duration="11693000" />
+      <workItem from="1701883043759" duration="2142000" />
     </task>
     <servers />
   </component>

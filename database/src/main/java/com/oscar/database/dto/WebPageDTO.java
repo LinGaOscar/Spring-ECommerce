@@ -16,7 +16,7 @@ public class WebPageDTO implements Serializable {
 
     @NotBlank(message = "pageName not blank")
     private String pageName;
-    private String introduce;
+    private String description;
 
     @NotBlank(message = "pid not blank")
     private String pid;

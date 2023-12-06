@@ -11,5 +11,5 @@ public interface ProductCategoryService {
 
     List<ProductCategory> findAll();
 
-    ProductCategory findOneByPid(String pId);
+    ProductCategory findOneByPid(String pid);
 }

@@ -1,9 +1,9 @@
 package com.oscar.database.controller;
 
-import com.oscar.database.domain.ProductCategory;
-import com.oscar.database.dto.ProductCategoryDTO;
+import com.oscar.database.domain.WebNavbar;
+import com.oscar.database.dto.WebNavbarDTO;
 import com.oscar.database.model.ApiResponse;
-import com.oscar.database.server.ProductCategoryService;
+import com.oscar.database.server.WebNavbarService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
@@ -12,21 +12,21 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
-@RequestMapping("/productCategory")
+@RequestMapping("/webNavbar")
 @RestController
-public class ProductCategoryController {
-    private final ProductCategoryService productCategoryService;
+public class WebNavbarController {
+    private final WebNavbarService webNavbarService;
     ApiResponse response;
 
     @Autowired
-    public ProductCategoryController(ProductCategoryService productCategoryService) {
-        this.productCategoryService = productCategoryService;
+    public WebNavbarController(WebNavbarService webNavbarService) {
+        this.webNavbarService = webNavbarService;
     }
 
     @GetMapping
     public ResponseEntity<ApiResponse> getAllList() {
         try {
-            List<ProductCategory> allList = productCategoryService.findAll();
+            List<WebNavbar> allList = webNavbarService.findAll();
             if (allList == null) {
                 response = new ApiResponse("204", "查無資料", null);
             } else {
@@ -42,11 +42,11 @@ public class ProductCategoryController {
     @GetMapping("/{pid}")
     public ResponseEntity<ApiResponse> getOne(@PathVariable String pid) {
         try {
-            ProductCategory productCategory = productCategoryService.findOneByPid(pid);
-            if (productCategory == null) {
+            WebNavbar webNavbar = webNavbarService.findOneByPid(pid);
+            if (webNavbar == null) {
                 response = new ApiResponse("204", "查無資料", null);
             } else {
-                response = new ApiResponse("200", "正常", productCategory);
+                response = new ApiResponse("200", "正常", webNavbar);
             }
             return ResponseEntity.ok(response);
         } catch (Exception e) {
@@ -57,19 +57,19 @@ public class ProductCategoryController {
 
 
     @PostMapping
-    public ResponseEntity<ApiResponse> saveOne(@Valid @RequestBody ProductCategoryDTO productCategoryDTO, BindingResult bindingResult) {
+    public ResponseEntity<ApiResponse> saveOne(@Valid @RequestBody WebNavbarDTO webNavbarDTO, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             response = new ApiResponse("422", "參數錯誤", bindingResult.getFieldError().getDefaultMessage());
             return ResponseEntity.ok(response);
         }
         try {
-            ProductCategory check = productCategoryService.findOneByPid(productCategoryDTO.getPid());
+            WebNavbar check = webNavbarService.findOneByPid(webNavbarDTO.getPid());
             if (check != null) {
                 response = new ApiResponse("422", "pid重複無法新增", null);
                 return ResponseEntity.ok(response);
             }
-            ProductCategory productCategorySaved = productCategoryService.saveOne(productCategoryDTO.convertToProductCategory());
-            response = new ApiResponse("201", "新增成功", productCategorySaved);
+            WebNavbar webNavbarSaved = webNavbarService.saveOne(webNavbarDTO.convertToWebNavbar());
+            response = new ApiResponse("201", "新增成功", webNavbarSaved);
             return ResponseEntity.ok(response);
         } catch (Exception e) {
             response = new ApiResponse("500", "DB連線異常", e.getMessage());
@@ -78,20 +78,20 @@ public class ProductCategoryController {
     }
 
     @PutMapping()
-    public ResponseEntity<ApiResponse> updateOne(@PathVariable String id, @Valid @RequestBody ProductCategoryDTO productCategoryDTO, BindingResult bindingResult) {
+    public ResponseEntity<ApiResponse> updateOne(@PathVariable String id, @Valid @RequestBody WebNavbarDTO webNavbarDTO, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             response = new ApiResponse("422", "參數錯誤", bindingResult.getFieldError().getDefaultMessage());
             return ResponseEntity.ok(response);
         }
         try {
-            ProductCategory check = productCategoryService.findOneByPid(id);
+            WebNavbar check = webNavbarService.findOneByPid(id);
             if (check == null) {
                 response = new ApiResponse("204", "查無資料無法更新", null);
                 return ResponseEntity.ok(response);
             }
-            productCategoryDTO.convertToProductCategory(check);
-            ProductCategory productCategoryUpdated = productCategoryService.updateOne(check);
-            response = new ApiResponse("200", "更新成功", productCategoryUpdated);
+            webNavbarDTO.convertToWebNavbar(check);
+            WebNavbar webNavbarUpdated = webNavbarService.updateOne(check);
+            response = new ApiResponse("200", "更新成功", webNavbarUpdated);
             return ResponseEntity.ok(response);
         } catch (Exception e) {
             response = new ApiResponse("500", "DB連線異常", e.getMessage());
