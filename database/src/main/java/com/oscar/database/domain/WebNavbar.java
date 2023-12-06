@@ -9,8 +9,8 @@ import java.util.Objects;
 
 @Entity
 @Data
-@Table(name = "product_category")
-public class ProductCategory implements Serializable {
+@Table(name = "web_navbar")
+public class WebNavbar implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
@@ -19,20 +19,23 @@ public class ProductCategory implements Serializable {
     @Column(name = "title")
     private String title;
 
-    @Column(name = "description")
-    private String description;
+    @Column(name = "sequence")
+    private Number sequence;
 
-    @Column(name = "pid", unique = true)
+    @Column(name = "url")
+    private String url;
+
+    @Column(name = "pid")
     private String pid;
 
     @Column(name = "id_delete")
-    private String isDelete;
+    private Boolean isDelete;
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
-        ProductCategory that = (ProductCategory) o;
+        WebNavbar that = (WebNavbar) o;
         return id != null && Objects.equals(id, that.id);
     }
 

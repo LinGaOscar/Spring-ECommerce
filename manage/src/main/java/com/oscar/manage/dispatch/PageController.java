@@ -1,67 +1,54 @@
 package com.oscar.manage.dispatch;
 
-import com.oscar.manage.model.NavItem;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.servlet.HandlerInterceptor;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import java.util.ArrayList;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 @Controller
-public class PageController {
-    @GetMapping({"", "/", "/{page}"})
-    public String home(Model model, @PathVariable(required = false) String page) {
-        String pageName = pageFilter(page);
+public class PageController implements WebMvcConfigurer {
+    private final List<String> pageList = List.of("page1", "page2", "page3"); // 从某个地方获取页面列表
 
-        if (pageName.equals("redirect:")) {
-            return "redirect:/"; // 導向根目錄
-        }
-        buildPage(model, pageName);
-        return "main";
-    }
-
-    private void buildPage(Model model, String pageName) {
-        buildHeader(model, pageName);
-        buildContents(model, pageName);
-        buildFooter(model, pageName);
-    }
-
-    private String pageFilter(String page) {
-        // 判斷跟目錄返回預設
-        if (page == null || page.isEmpty()) {
-            return "productCategory";
-        }
-        // 判斷現有頁面
-        if (page.equals("navbar") || page.equals("navbarForm")) {
-            return page;
+    @GetMapping("/{page}")
+    public String getPage(@PathVariable String page, Model model) {
+        if (pageList.contains(page)) {
+            model.addAttribute("contentTemplate", page + "Template"); // 设置content模板
+            return "main";
         } else {
-            return "redirect:";
+            return "hello"; // 如果页面不存在于pageList中，返回hello.html
         }
     }
 
-    private void buildFooter(Model model, String pageName) {
-        model.addAttribute("footerTemplate", "footers/footer");
-    }
-
-    private void buildContents(Model model, String pageName) {
-        model.addAttribute("contentTemplate", "contents/" + pageName);
-    }
-
-    private void buildHeader(Model model, String pageName) {
-        buildNav(model, pageName);
-        model.addAttribute("headerTemplate", "headers/header");
-    }
-
-    private void buildNav(Model model, String pageName) {
-        if (pageName.equals("")) {
-
+    @GetMapping("/{page}/{id}")
+    public String getPageWithId(@PathVariable String page, @PathVariable String id, Model model) {
+        if (pageList.contains(page)) {
+            model.addAttribute("contentTemplate", page + "Form"); // 设置对应的表单模板
+            return "main";
+        } else {
+            return "hello";
         }
-        // 動態生成連結的清單
-        List<NavItem> navItems = new ArrayList<>();
-        navItems.add(new NavItem(0,"首頁", "/"));
-        navItems.add(new NavItem(1,"navbar", "/navbar"));
-        model.addAttribute("navItems", navItems);
+    }
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(new TemplateInterceptor());
+    }
+
+    private static class TemplateInterceptor implements HandlerInterceptor {
+        @Override
+        public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
+            if (modelAndView != null && modelAndView.getViewName().equals("main")) {
+                modelAndView.addObject("headerTemplate", "header");
+                modelAndView.addObject("footerTemplate", "footer");
+            }
+        }
     }
 }

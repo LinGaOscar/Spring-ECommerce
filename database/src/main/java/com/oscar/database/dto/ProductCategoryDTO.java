@@ -10,17 +10,21 @@ import java.io.Serializable;
 
 @Data
 public class ProductCategoryDTO implements Serializable {
-    @NotBlank
+    @NotBlank(message = "title not blank")
     private String title;
     private String description;
-    @NotBlank
-    private String pid;
-    @NotBlank
-    private Boolean isDelete;
 
-    public void convertToBook(ProductCategory productCategory) {
+    @NotBlank(message = "pid not blank")
+    private String pid;
+
+    @NotBlank(message = "isDelete not blank")
+    private String isDelete;
+
+    // for update
+    public void convertToProductCategory(ProductCategory productCategory) {
         new productCategoryConvert().convert(this, productCategory);
     }
+    // for save
     public ProductCategory convertToProductCategory(){
         return new productCategoryConvert().convert(this);
     }

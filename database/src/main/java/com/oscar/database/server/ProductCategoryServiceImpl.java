@@ -32,8 +32,7 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
     }
 
     @Override
-    public ProductCategory getOneById(Long id) {
-        ProductCategory productCategory = productCategoryRepository.findById(id).orElse(null);
-        return productCategory;
+    public ProductCategory findOneByPid(String pid) {
+        return productCategoryRepository.findByPid(pid);
     }
 }
