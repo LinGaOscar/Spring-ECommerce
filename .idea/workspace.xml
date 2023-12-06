@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d447987b-cd4d-4fd4-b9db-2af1cdd297d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/WebNavbarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/WebPageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/dto/ProductDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/ProductCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/ProductCategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/WebPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/WebPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/dto/WebPageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/dto/WebPageDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/WebNavbarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/WebNavbarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/WebPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/WebPageController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,13 +28,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/market/src/main/java/com/oscar/market/dispatch/PageController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/ProductListController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/market/src/main/resources/templates/contents/shoppingCart.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/market/src/main/resources/templates/main.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/market/src/main/resources/templates/contents/productCategory.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/ShoppingCartController.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/ProductListController.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/ProductCategoryController.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/market/src/main/resources/templates/contents/shoppingCart.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/market/src/main/java/com/oscar/market/dispatch/PageController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/market/src/main/java/com/oscar/market/controller/ShoppingCartController.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/market/src/main/resources/templates/contents/productList.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JpbToolWindowState">
@@ -182,7 +174,8 @@
       <workItem from="1701270506660" duration="5067000" />
       <workItem from="1701623141809" duration="3791000" />
       <workItem from="1701861286358" duration="11693000" />
-      <workItem from="1701883043759" duration="2142000" />
+      <workItem from="1701883043759" duration="4207000" />
+      <workItem from="1701887304220" duration="1816000" />
     </task>
     <servers />
   </component>

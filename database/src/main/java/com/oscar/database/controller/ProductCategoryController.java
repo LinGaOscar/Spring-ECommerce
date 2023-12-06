@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
-@RequestMapping("/productCategory")
 @RestController
+@RequestMapping("/productCategory")
 public class ProductCategoryController {
     private final ProductCategoryService productCategoryService;
     ApiResponse response;
@@ -55,7 +55,6 @@ public class ProductCategoryController {
         }
     }
 
-
     @PostMapping
     public ResponseEntity<ApiResponse> saveOne(@Valid @RequestBody ProductCategoryDTO productCategoryDTO, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
@@ -76,15 +75,14 @@ public class ProductCategoryController {
             return ResponseEntity.ok(response);
         }
     }
-
     @PutMapping()
-    public ResponseEntity<ApiResponse> updateOne(@PathVariable String id, @Valid @RequestBody ProductCategoryDTO productCategoryDTO, BindingResult bindingResult) {
+    public ResponseEntity<ApiResponse> updateOne(@Valid @RequestBody ProductCategoryDTO productCategoryDTO, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             response = new ApiResponse("422", "參數錯誤", bindingResult.getFieldError().getDefaultMessage());
             return ResponseEntity.ok(response);
         }
         try {
-            ProductCategory check = productCategoryService.findOneByPid(id);
+            ProductCategory check = productCategoryService.findOneByPid(productCategoryDTO.getPid());
             if (check == null) {
                 response = new ApiResponse("204", "查無資料無法更新", null);
                 return ResponseEntity.ok(response);

@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
-@RequestMapping("/webNavbar")
 @RestController
+@RequestMapping("/webPage")
 public class WebPageController {
     private final WebPageService webPageService;
     ApiResponse response;
@@ -55,7 +55,6 @@ public class WebPageController {
         }
     }
 
-
     @PostMapping
     public ResponseEntity<ApiResponse> saveOne(@Valid @RequestBody WebPageDTO webPageDTO, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
@@ -77,14 +76,14 @@ public class WebPageController {
         }
     }
 
-    @PutMapping("/{id}")
-    public ResponseEntity<ApiResponse> updateOne(@PathVariable String id, @Valid @RequestBody WebPageDTO webPageDTO, BindingResult bindingResult) {
+    @PutMapping()
+    public ResponseEntity<ApiResponse> updateOne(@Valid @RequestBody WebPageDTO webPageDTO, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             response = new ApiResponse("422", "參數錯誤", bindingResult.getFieldError().getDefaultMessage());
             return ResponseEntity.ok(response);
         }
         try {
-            WebPage check = webPageService.findOneByPid(id);
+            WebPage check = webPageService.findOneByPid(webPageDTO.getPid());
             if (check == null) {
                 response = new ApiResponse("204", "查無資料無法更新", null);
                 return ResponseEntity.ok(response);
