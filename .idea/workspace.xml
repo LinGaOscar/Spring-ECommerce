@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d447987b-cd4d-4fd4-b9db-2af1cdd297d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/database/src/test/java/com/oscar/database/config/DaoConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/test/java/com/oscar/database/controller/WebNavbarControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/test/java/com/oscar/database/domain/WebNavbarRepositoryIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/test/java/com/oscar/database/service/WebNavbarServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/ProductCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/ProductCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/WebNavbar.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/WebNavbar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/WebPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/WebPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/dto/WebNavbarDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/dto/WebNavbarDTO.java" afterDir="false" />
-    </list>
+    <list default="true" id="d447987b-cd4d-4fd4-b9db-2af1cdd297d0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -257,7 +245,7 @@
       <workItem from="1701887304220" duration="6030000" />
       <workItem from="1701928329100" duration="8945000" />
       <workItem from="1701948053447" duration="5501000" />
-      <workItem from="1701962576129" duration="5298000" />
+      <workItem from="1701962576129" duration="5882000" />
     </task>
     <servers />
   </component>
