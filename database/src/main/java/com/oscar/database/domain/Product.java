@@ -24,11 +24,11 @@ public class Product {
     @Column(name = "description")
     private String description;
 
-    @Column(name = "pid")
+    @Column(name = "pid", unique = true)
     private String pid;
 
-    @Column(name = "id_delete")
-    private Boolean isDelete;
+    @Column(name = "is_delete")
+    private String isDelete;
 
     @Override
     public boolean equals(Object o) {

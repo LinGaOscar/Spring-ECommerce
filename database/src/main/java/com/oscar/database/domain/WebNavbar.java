@@ -20,16 +20,16 @@ public class WebNavbar implements Serializable {
     private String title;
 
     @Column(name = "sequence")
-    private Number sequence;
+    private Long sequence;
 
     @Column(name = "url")
     private String url;
 
-    @Column(name = "pid")
+    @Column(name = "pid", unique = true)
     private String pid;
 
-    @Column(name = "id_delete")
-    private Boolean isDelete;
+    @Column(name = "is_delete")
+    private String isDelete;
 
     @Override
     public boolean equals(Object o) {

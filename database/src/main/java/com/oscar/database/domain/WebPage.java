@@ -10,7 +10,7 @@ import java.util.Objects;
 @Entity
 @Data
 @Table(name = "web_page")
-public class WebPage  implements Serializable {
+public class WebPage implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
@@ -28,8 +28,8 @@ public class WebPage  implements Serializable {
     @Column(name = "pid", unique = true)
     private String pid;
 
-    @Column(name = "id_delete")
-    private Boolean isDelete;
+    @Column(name = "is_delete")
+    private String isDelete;
 
     @Override
     public boolean equals(Object o) {

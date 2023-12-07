@@ -5,21 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d447987b-cd4d-4fd4-b9db-2af1cdd297d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/exception/ControllerExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/exception/ParameterException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/test/java/com/oscar/database/config/DaoConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/test/java/com/oscar/database/controller/WebNavbarControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/test/java/com/oscar/database/domain/WebNavbarRepositoryIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/test/java/com/oscar/database/service/WebNavbarServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/ProductCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/ProductCategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/WebNavbarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/WebNavbarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/exception/InvalidRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductCategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductCategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/WebNavBarServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/WebNavBarServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/WebNavbarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/WebNavbarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/WebPageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/WebPageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/WebPageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/WebPageServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/ProductCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/ProductCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/WebNavbar.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/WebNavbar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/WebPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/domain/WebPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/dto/WebNavbarDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/dto/WebNavbarDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +103,7 @@
       <recent name="D:\GitHub\Spring-ECommerce\market\src\main\resources\static\images\productList" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.oscar.database.domain" />
       <recent name="com.oscar.market" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -129,9 +126,73 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DatabaseApplication">
+  <component name="RunManager" selected="JUnit.WebNavbarControllerTest.getOne">
     <configuration name="generated-requests#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" runType="Run single request">
       <method v="2" />
+    </configuration>
+    <configuration name="WebNavbarControllerTest.getOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="database" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oscar.database.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oscar.database.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.oscar.database.controller.WebNavbarControllerTest" />
+      <option name="METHOD_NAME" value="getOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebNavbarRepositoryIntegrationTest.findByPid_thenReturnWebNavbar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="database" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oscar.database.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oscar.database.domain" />
+      <option name="MAIN_CLASS_NAME" value="com.oscar.database.domain.WebNavbarRepositoryIntegrationTest" />
+      <option name="METHOD_NAME" value="findByPid_thenReturnWebNavbar" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebNavbarRepositoryIntegrationTest.saveOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="database" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oscar.database.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oscar.database.domain" />
+      <option name="MAIN_CLASS_NAME" value="com.oscar.database.domain.WebNavbarRepositoryIntegrationTest" />
+      <option name="METHOD_NAME" value="saveOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebNavbarServiceTest.findByPid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="database" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oscar.database.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oscar.database.service" />
+      <option name="MAIN_CLASS_NAME" value="com.oscar.database.service.WebNavbarServiceTest" />
+      <option name="METHOD_NAME" value="findByPid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="DatabaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="database" />
@@ -156,12 +217,20 @@
     </configuration>
     <list>
       <item itemvalue="HTTP Request.generated-requests#1" />
+      <item itemvalue="JUnit.WebNavbarRepositoryIntegrationTest.findByPid_thenReturnWebNavbar" />
       <item itemvalue="Spring Boot.DatabaseApplication" />
       <item itemvalue="Spring Boot.ManageApplication" />
       <item itemvalue="Spring Boot.MarketApplication" />
+      <item itemvalue="JUnit.WebNavbarRepositoryIntegrationTest.saveOne" />
+      <item itemvalue="JUnit.WebNavbarServiceTest.findByPid" />
+      <item itemvalue="JUnit.WebNavbarControllerTest.getOne" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WebNavbarControllerTest.getOne" />
+        <item itemvalue="JUnit.WebNavbarServiceTest.findByPid" />
+        <item itemvalue="JUnit.WebNavbarRepositoryIntegrationTest.findByPid_thenReturnWebNavbar" />
+        <item itemvalue="JUnit.WebNavbarRepositoryIntegrationTest.saveOne" />
         <item itemvalue="HTTP Request.generated-requests#1" />
       </list>
     </recent_temporary>
@@ -186,7 +255,9 @@
       <workItem from="1701861286358" duration="11693000" />
       <workItem from="1701883043759" duration="4207000" />
       <workItem from="1701887304220" duration="6030000" />
-      <workItem from="1701928329100" duration="8350000" />
+      <workItem from="1701928329100" duration="8945000" />
+      <workItem from="1701948053447" duration="5501000" />
+      <workItem from="1701962576129" duration="5298000" />
     </task>
     <servers />
   </component>

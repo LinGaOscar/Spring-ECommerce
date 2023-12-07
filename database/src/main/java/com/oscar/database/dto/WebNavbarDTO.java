@@ -1,6 +1,5 @@
 package com.oscar.database.dto;
 
-import com.oscar.database.domain.ProductCategory;
 import com.oscar.database.domain.WebNavbar;
 import com.oscar.database.util.CustomBeanUtils;
 import lombok.Data;
