@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d447987b-cd4d-4fd4-b9db-2af1cdd297d0" name="Changes" comment="" />
+    <list default="true" id="d447987b-cd4d-4fd4-b9db-2af1cdd297d0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/DatabaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/DatabaseApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/resources/config/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/manage/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/market/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,7 +121,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WebNavbarControllerTest.getOne">
+  <component name="RunManager" selected="Spring Boot.DatabaseApplication">
     <configuration name="generated-requests#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -206,12 +213,12 @@
     <list>
       <item itemvalue="HTTP Request.generated-requests#1" />
       <item itemvalue="JUnit.WebNavbarRepositoryIntegrationTest.findByPid_thenReturnWebNavbar" />
-      <item itemvalue="Spring Boot.DatabaseApplication" />
-      <item itemvalue="Spring Boot.ManageApplication" />
-      <item itemvalue="Spring Boot.MarketApplication" />
       <item itemvalue="JUnit.WebNavbarRepositoryIntegrationTest.saveOne" />
       <item itemvalue="JUnit.WebNavbarServiceTest.findByPid" />
       <item itemvalue="JUnit.WebNavbarControllerTest.getOne" />
+      <item itemvalue="Spring Boot.DatabaseApplication" />
+      <item itemvalue="Spring Boot.ManageApplication" />
+      <item itemvalue="Spring Boot.MarketApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -245,7 +252,8 @@
       <workItem from="1701887304220" duration="6030000" />
       <workItem from="1701928329100" duration="8945000" />
       <workItem from="1701948053447" duration="5501000" />
-      <workItem from="1701962576129" duration="5882000" />
+      <workItem from="1701962576129" duration="7515000" />
+      <workItem from="1701970153074" duration="1046000" />
     </task>
     <servers />
   </component>

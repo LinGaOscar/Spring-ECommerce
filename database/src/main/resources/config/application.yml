@@ -12,3 +12,10 @@ spring:
     username: root
     password: "0731"
     driver-class-name: org.mariadb.jdbc.Driver
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+  api-docs:
+    enabled: false
