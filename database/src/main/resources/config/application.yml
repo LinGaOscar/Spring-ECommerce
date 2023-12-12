@@ -12,6 +12,8 @@ spring:
     username: root
     password: "0731"
     driver-class-name: org.mariadb.jdbc.Driver
+  config:
+    activate: dev
 
 springdoc:
   swagger-ui:
@@ -25,6 +27,7 @@ logging:
     org.springframework.web: warn
     com.oscar: debug
   file:
-    path: log
-    name: database.log
+    path: devlog
+#    path: /Users/Oscar/Desktop
+    name: my.log
 #debug: true
