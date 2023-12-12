@@ -19,3 +19,12 @@ springdoc:
     enabled: true
   api-docs:
     enabled: false
+logging:
+  level:
+    root: error
+    org.springframework.web: warn
+    com.oscar: debug
+  file:
+    path: log
+    name: database.log
+#debug: true
