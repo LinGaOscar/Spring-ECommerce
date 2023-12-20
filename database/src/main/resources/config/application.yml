@@ -26,5 +26,5 @@ logging:
     com.oscar: info
   file:
     name: devlog/database.log
-#    path: /Users/Oscar/Desktop
+#   name: /Users/Oscar/Desktop/database.log
 #   debug: true

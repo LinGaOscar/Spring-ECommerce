@@ -26,9 +26,10 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
 
     @Override
     public ProductCategory saveOneByDto(ProductCategoryDTO productCategoryDTO) {
-        ProductCategory temp = productCategoryRepository.findByPid(productCategoryDTO.getPid());
+        String pid = productCategoryDTO.getPid();
+        ProductCategory temp = productCategoryRepository.findByPid(pid);
         if (temp != null) {
-            throw new ParameterException("pid重複無法新增");
+            throw new ParameterException("pid:" + pid + "，重複無法新增");
         }
         return productCategoryRepository.save(productCategoryDTO.convertToProductCategory());
     }
@@ -40,9 +41,10 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
 
     @Override
     public ProductCategory updateOneByDto(ProductCategoryDTO productCategoryDTO) {
-        ProductCategory temp = productCategoryRepository.findByPid(productCategoryDTO.getPid());
+        String pid = productCategoryDTO.getPid();
+        ProductCategory temp = productCategoryRepository.findByPid(pid);
         if (temp == null) {
-            throw new NotFoundException("無法更新");
+            throw new NotFoundException("pid:" + pid + "不存在無法更新");
         }
         productCategoryDTO.convertToProductCategory(temp);
         return productCategoryRepository.save(temp);

@@ -26,9 +26,10 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Product saveOneByDto(ProductDTO productDTO) {
-        Product temp = productRepository.findByPid(productDTO.getPid());
+        String pid = productDTO.getPid();
+        Product temp = productRepository.findByPid(pid);
         if (temp != null) {
-            throw new ParameterException("pid重複無法新增");
+            throw new ParameterException("pid:" + pid + "，重複無法新增");
         }
         return productRepository.save(productDTO.convertToPruduct());
     }
@@ -40,9 +41,10 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Product updateOneByDto(ProductDTO productDTO) {
-        Product temp = productRepository.findByPid(productDTO.getPid());
+        String pid = productDTO.getPid();
+        Product temp = productRepository.findByPid(pid);
         if (temp == null) {
-            throw new NotFoundException("無法更新");
+            throw new NotFoundException("pid:" + pid + "不存在無法更新");
         }
         productDTO.convertToPruduct(temp);
         return productRepository.save(temp);

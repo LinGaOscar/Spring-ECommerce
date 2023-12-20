@@ -1,4 +1,4 @@
 logging:
   level:
     root: warn
-    com.oscar: error
+    com.oscar: warn
