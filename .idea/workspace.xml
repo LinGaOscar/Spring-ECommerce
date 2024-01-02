@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d447987b-cd4d-4fd4-b9db-2af1cdd297d0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devlog/database.log.2023-12-18.0.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/DatabaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/DatabaseApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductCategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/oscar/database/server/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/resources/config/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/resources/config/application-prod.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/resources/config/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devlog/database.log" beforeDir="false" afterPath="$PROJECT_DIR$/devlog/database.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,6 +260,7 @@
       <workItem from="1702274233098" duration="1609000" />
       <workItem from="1702897169276" duration="7659000" />
       <workItem from="1703058944884" duration="719000" />
+      <workItem from="1704175195691" duration="5958000" />
     </task>
     <servers />
   </component>
@@ -375,16 +379,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/database/src/main/java/com/oscar/database/controller/ProductCategoryController.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

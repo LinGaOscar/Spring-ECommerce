@@ -6,6 +6,10 @@ import com.oscar.database.dto.ProductCategoryDTO;
 import com.oscar.database.exception.NotFoundException;
 import com.oscar.database.exception.ParameterException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.cache.annotation.Caching;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -24,6 +28,10 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
         return productCategoryRepository.save(productCategory);
     }
 
+    @Caching(
+            put = {@CachePut(value = "productCategory", key = "#productCategoryDTO.getPid()")},
+            evict = {@CacheEvict(value = "productCategoryList", allEntries = true)}
+    )
     @Override
     public ProductCategory saveOneByDto(ProductCategoryDTO productCategoryDTO) {
         String pid = productCategoryDTO.getPid();
@@ -39,6 +47,8 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
         return productCategoryRepository.save(productCategory);
     }
 
+    @CachePut(value = "productCategory", key = "#productCategoryDTO.getPid()")
+    @CacheEvict(value = "productCategoryList", allEntries = true)
     @Override
     public ProductCategory updateOneByDto(ProductCategoryDTO productCategoryDTO) {
         String pid = productCategoryDTO.getPid();
@@ -50,6 +60,7 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
         return productCategoryRepository.save(temp);
     }
 
+    @Cacheable(value = "productCategoryList")
     @Override
     public List<ProductCategory> findAll() {
         List<ProductCategory> productCategoryList = productCategoryRepository.findAll();
@@ -59,6 +70,7 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
         return productCategoryList;
     }
 
+    @Cacheable(value = "productCategory", key = "#pid")
     @Override
     public ProductCategory findOneByPid(String pid) {
         ProductCategory temp = productCategoryRepository.findByPid(pid);

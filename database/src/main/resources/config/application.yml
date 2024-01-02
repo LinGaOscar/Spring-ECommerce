@@ -12,7 +12,15 @@ spring:
     username: root
     password: "0731"
     driver-class-name: org.mariadb.jdbc.Driver
-
+#Spring cache redis setting
+  cache:
+    type: redis
+  redis:
+    database: 1
+    host: localhost
+    port: 6379
+    password:
+#OpenAPI swagger setting
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
